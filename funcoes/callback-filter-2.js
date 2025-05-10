@@ -9,17 +9,21 @@ const carrinho = [
 
 const getNome = item => item.nome
 const qtdMaiorQueZero = item => item.qtd > 0
-const qtdMaiorIgualZero = item => item.qtd >= 0
-const qtdMuitoGrande = item => item.qtd >= 1000
 
-const itensValidos = carrinho.filter(qtdMaiorQueZero)
-console.log(itensValidos)
+Array.prototype.meuFilter = function (fn) {
+    const novoArray = []
+
+    for (let i = 0; i < this.length; i++) {
+        if (fn(this[i], i, this)) {
+            novoArray.push(this[i])
+        }
+    }
+
+    return novoArray
+}
 
 const nomesItensValidos = carrinho
-    .filter(qtdMaiorQueZero)
+    .meuFilter(qtdMaiorQueZero)
     .map(getNome)
 
 console.log(nomesItensValidos)
-
-const itensGrandes = carrinho.filter(qtdMuitoGrande)
-console.log(itensGrandes)   
