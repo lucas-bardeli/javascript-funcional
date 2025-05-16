@@ -10,7 +10,7 @@ function bomDia() {
 bomDia()
 
 // Function expression
-const boaTarde = function () {
+const boaTarde = function() {
     console.log('Boa tarde!')
 }
 

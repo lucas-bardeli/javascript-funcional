@@ -10,22 +10,22 @@ function adicao(num1) {
 console.log(adicao(3)(4)(5))
 
 
-const somar = function (num1, num2) {
+const somar = function(num1, num2) {
     return num1 + num2
 }
-const subtrair = function (num1, num2) {
+const subtrair = function(num1, num2) {
     return num1 - num2
 }
-const multiplicar = function (num1, num2) {
+const multiplicar = function(num1, num2) {
     return num1 * num2
 }
-const dividir = function (num1, num2) {
+const dividir = function(num1, num2) {
     return num1 / num2
 }
 
 function operacao(num1) {
-    return function (num2) {
-        return function (fn) {
+    return function(num2) {
+        return function(fn) {
             if (typeof fn === 'function'){
                 return fn(num1, num2)
             }

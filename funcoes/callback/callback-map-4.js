@@ -7,7 +7,7 @@ const carrinho = [
     { nome: 'Tesoura', qtd: 1, preco: 19.20 },
 ]
 
-Array.prototype.meuMap = function (fn) {
+Array.prototype.meuMap = function(fn) {
     const novoArray = []
 
     for (let i = 0; i < this.length; i++) {

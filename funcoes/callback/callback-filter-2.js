@@ -10,7 +10,7 @@ const carrinho = [
 const getNome = item => item.nome
 const qtdMaiorQueZero = item => item.qtd > 0
 
-Array.prototype.meuFilter = function (fn) {
+Array.prototype.meuFilter = function(fn) {
     const novoArray = []
 
     for (let i = 0; i < this.length; i++) {

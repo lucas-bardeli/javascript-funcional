@@ -3,7 +3,7 @@ function bomDia() {
     console.log('Bom dia!')
 }
 
-const boaTarde = function () {
+const boaTarde = function() {
     console.log('Boa tarde!')
 }
 

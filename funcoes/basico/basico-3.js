@@ -27,11 +27,11 @@ console.log(somar(1, 2, 3, 4, 5, 6, 7))
 console.log(somar(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
 
 // this
-Array.prototype.log = function () {
+Array.prototype.log = function() {
     console.log(this)
 }
 
-Array.prototype.ultimo = function () {
+Array.prototype.ultimo = function() {
     console.log(this[this.length - 1])
 }
 

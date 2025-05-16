@@ -21,12 +21,12 @@ const media = (acc, el) => {
         media: novo_total / nova_qtd
     }
 } 
-const media_incial = { qtd: 0, total: 0, media: 0 }
+const media_inicial = { qtd: 0, total: 0, media: 0 }
 
 const resultado = carrinho
     .filter(frageis)
     .map(total_qtds)
-    .reduce(media, media_incial)
+    .reduce(media, media_inicial)
     .media
 
 console.log("A média é:", resultado)
